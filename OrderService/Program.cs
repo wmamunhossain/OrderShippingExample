@@ -24,10 +24,14 @@ builder.Services.AddMassTransit((x) =>
         #endregion
 
         #region topic-exchange
-        cfg.Message<OrderPlaced>(x => x.SetEntityName("order-placed-topic-exchange"));
-        cfg.Publish<OrderPlaced>(x => x.ExchangeType = "topic");
+        //cfg.Message<OrderPlaced>(x => x.SetEntityName("order-placed-topic-exchange"));
+        //cfg.Publish<OrderPlaced>(x => x.ExchangeType = "topic");
         #endregion
 
+        #region headers-exchange
+        cfg.Message<OrderPlaced>(x => x.SetEntityName("order-placed-headers-exchange"));
+        cfg.Publish<OrderPlaced>(x => x.ExchangeType = "headers");
+        #endregion
     });
 });
 
@@ -54,10 +58,41 @@ app.MapPost("/orders", async (OrderPlaced order, IBus bus) =>
     #endregion
 
     #region topic-exchange
-    await bus.Publish(orderPlacedMessage, context =>
+    //await bus.Publish(orderPlacedMessage, context =>
+    //{
+    //    var routingKey = orderPlacedMessage.Quantity > 10 ? "order.shipping" : "order.regular.tracking";
+    //    context.SetRoutingKey(routingKey);
+    //});
+    #endregion
+
+    #region headers-exchange
+    await bus.Publish(orderPlacedMessage, async context =>
     {
-        var routingKey = orderPlacedMessage.Quantity > 10 ? "order.shipping" : "order.regular.tracking";
-        context.SetRoutingKey(routingKey);
+        var headers = new Dictionary<string, object>
+        {
+            { "orderId", orderPlacedMessage.OrderId.ToString() },
+            { "quantity", orderPlacedMessage.Quantity }
+        };
+
+
+        if(orderPlacedMessage.Quantity > 10)
+        {
+            headers.Add("priority", "high");
+            headers.Add("department", "shipping");
+        }
+        else
+        {
+            headers.Add("priority", "low");
+            headers.Add("department", "tracking");
+        }
+
+        await bus.Publish(orderPlacedMessage, context =>
+        {
+            var priority = headers.GetValueOrDefault("priority");
+            var department = headers.GetValueOrDefault("department");
+            context.Headers.Set("priority", priority);
+            context.Headers.Set("department", department);
+        });
     });
     #endregion
 

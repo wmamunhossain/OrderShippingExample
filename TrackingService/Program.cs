@@ -38,6 +38,16 @@ builder.Services.AddMassTransit(x =>
                 x.ExchangeType = "topic";
             });
             #endregion
+
+            #region topic-exchange
+            e.Bind("order-placed-headers-exchange", x =>
+            {
+                x.SetBindingArgument("department", "tracking");
+                x.SetBindingArgument("priority", "low");
+                x.SetBindingArgument("x-match", "all");
+                x.ExchangeType = "headers";
+            });
+            #endregion
         });
     });
 });

@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\shippingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|solutionrelative:shippingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7340AE25-ABC7-40CC-9ABC-5D9EE3091F08}|TrackingService\\TrackingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\trackingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7340AE25-ABC7-40CC-9ABC-5D9EE3091F08}|TrackingService\\TrackingService.csproj|solutionrelative:trackingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4E02BE0-748C-4D0B-B114-34CB198DE8F5}|OrderService\\OrderService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4E02BE0-748C-4D0B-B114-34CB198DE8F5}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\shippingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|solutionrelative:shippingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7340AE25-ABC7-40CC-9ABC-5D9EE3091F08}|TrackingService\\TrackingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\trackingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7340AE25-ABC7-40CC-9ABC-5D9EE3091F08}|TrackingService\\TrackingService.csproj|solutionrelative:trackingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\shippingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|solutionrelative:shippingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7340AE25-ABC7-40CC-9ABC-5D9EE3091F08}|TrackingService\\TrackingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\trackingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7340AE25-ABC7-40CC-9ABC-5D9EE3091F08}|TrackingService\\TrackingService.csproj|solutionrelative:trackingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\shippingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|solutionrelative:shippingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 173,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\TrackingService\\Program.cs",
               "RelativeDocumentMoniker": "TrackingService\\Program.cs",
               "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\TrackingService\\Program.cs",
               "RelativeToolTip": "TrackingService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T18:48:17.245Z",
               "IsPinned": true,
@@ -48,7 +48,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "OrderPlacedConsumer.cs",
               "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\TrackingService\\Consumers\\OrderPlacedConsumer.cs",
               "RelativeDocumentMoniker": "TrackingService\\Consumers\\OrderPlacedConsumer.cs",
@@ -62,27 +62,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\OrderService\\Program.cs",
-              "RelativeDocumentMoniker": "OrderService\\Program.cs",
-              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\OrderService\\Program.cs",
-              "RelativeToolTip": "OrderService\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Program.cs",
+              "RelativeDocumentMoniker": "ShippingService\\Program.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Program.cs",
+              "RelativeToolTip": "ShippingService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T18:42:27.384Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-07-27T18:45:45.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "OrderPlacedConsumer.cs",
               "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Consumers\\OrderPlacedConsumer.cs",
               "RelativeDocumentMoniker": "ShippingService\\Consumers\\OrderPlacedConsumer.cs",
               "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Consumers\\OrderPlacedConsumer.cs",
               "RelativeToolTip": "ShippingService\\Consumers\\OrderPlacedConsumer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T18:42:37.649Z",
               "EditorCaption": ""
@@ -95,15 +94,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Program.cs",
-              "RelativeDocumentMoniker": "ShippingService\\Program.cs",
-              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Program.cs",
-              "RelativeToolTip": "ShippingService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\OrderService\\Program.cs",
+              "RelativeDocumentMoniker": "OrderService\\Program.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\OrderService\\Program.cs",
+              "RelativeToolTip": "OrderService\\Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T18:45:45.614Z",
+              "WhenOpened": "2025-07-27T18:42:27.384Z",
               "EditorCaption": ""
             }
           ]
