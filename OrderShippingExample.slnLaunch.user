@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "Run",
+    "Projects": [
+      {
+        "Path": "OrderService\\OrderService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ShippingService\\ShippingService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TrackingService\\TrackingService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
