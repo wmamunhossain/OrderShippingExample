@@ -1,4 +1,4 @@
-// InventoryService
+// PaymentService
 using MassTransit;
 using SharedMessages.Messages;
 
@@ -34,11 +34,11 @@ app.UseHttpsRedirection();
 app.Run();
 
 
-public class InventoryReservedConsumer : IConsumer<OrderPlaced>
+public class InventoryReservedConsumer : IConsumer<InventoryReserved>
 {
-    async Task IConsumer<OrderPlaced>.Consume(ConsumeContext<OrderPlaced> context)
+    async Task IConsumer<InventoryReserved>.Consume(ConsumeContext<InventoryReserved> context)
     {
-        Console.WriteLine($"Payment processed for Order {context.Message.OrderId}");
+        Console.WriteLine($"Payment completed for Order {context.Message.OrderId}");
         await context.Publish(new PaymentCompleted(context.Message.OrderId));
     }
 }

@@ -1,3 +1,4 @@
+// OrderService
 using MassTransit;
 using SharedMessages.Messages;
 
@@ -12,6 +13,9 @@ builder.Services.AddMassTransit((x) =>
     {
         cfg.Host("rabbitmq://localhost");
 
+        #region default
+
+        #endregion
 
         #region direct-exchange
         //cfg.Message<OrderPlaced>(x => x.SetEntityName("order-placed-direct-exchange"));
@@ -29,8 +33,8 @@ builder.Services.AddMassTransit((x) =>
         #endregion
 
         #region headers-exchange
-        cfg.Message<OrderPlaced>(x => x.SetEntityName("order-placed-headers-exchange"));
-        cfg.Publish<OrderPlaced>(x => x.ExchangeType = "headers");
+        //cfg.Message<OrderPlaced>(x => x.SetEntityName("order-placed-headers-exchange"));
+        //cfg.Publish<OrderPlaced>(x => x.ExchangeType = "headers");
         #endregion
     });
 });
@@ -45,6 +49,10 @@ app.MapPost("/orders", async (OrderPlaced order, IBus bus) =>
     Console.WriteLine("placing orders");
     var orderPlacedMessage = new OrderPlaced(order.OrderId, order.Quantity);
 
+    #region default
+        await bus.Publish(orderPlacedMessage);
+    #endregion
+
     #region fanout-exchange
     //await bus.Publish(orderPlacedMessage);
     #endregion
@@ -52,7 +60,7 @@ app.MapPost("/orders", async (OrderPlaced order, IBus bus) =>
     #region direct-exchange
     //await bus.Publish(orderPlacedMessage, context =>
     //{
-    //    var routingKey = orderPlacedMessage.Quantity > 10 ? "order.shipping" : "order.tracking";
+    //    var routingKey = orderPlacedMessage.Quantity < 10 ? "order.shipping" : "order.tracking";
     //    context.SetRoutingKey(routingKey);
     //});
     #endregion
@@ -66,34 +74,34 @@ app.MapPost("/orders", async (OrderPlaced order, IBus bus) =>
     #endregion
 
     #region headers-exchange
-    await bus.Publish(orderPlacedMessage, async context =>
-    {
-        var headers = new Dictionary<string, object>
-        {
-            { "orderId", orderPlacedMessage.OrderId.ToString() },
-            { "quantity", orderPlacedMessage.Quantity }
-        };
+    //await bus.Publish(orderPlacedMessage, async context =>
+    //{
+    //    var headers = new Dictionary<string, object>
+    //    {
+    //        { "orderId", orderPlacedMessage.OrderId.ToString() },
+    //        { "quantity", orderPlacedMessage.Quantity }
+    //    };
 
 
-        if(orderPlacedMessage.Quantity > 10)
-        {
-            headers.Add("priority", "high");
-            headers.Add("department", "shipping");
-        }
-        else
-        {
-            headers.Add("priority", "low");
-            headers.Add("department", "tracking");
-        }
+    //    if(orderPlacedMessage.Quantity > 10)
+    //    {
+    //        headers.Add("priority", "high");
+    //        headers.Add("department", "shipping");
+    //    }
+    //    else
+    //    {
+    //        headers.Add("priority", "low");
+    //        headers.Add("department", "tracking");
+    //    }
 
-        await bus.Publish(orderPlacedMessage, context =>
-        {
-            var priority = headers.GetValueOrDefault("priority");
-            var department = headers.GetValueOrDefault("department");
-            context.Headers.Set("priority", priority);
-            context.Headers.Set("department", department);
-        });
-    });
+    //    await bus.Publish(orderPlacedMessage, context =>
+    //    {
+    //        var priority = headers.GetValueOrDefault("priority");
+    //        var department = headers.GetValueOrDefault("department");
+    //        context.Headers.Set("priority", priority);
+    //        context.Headers.Set("department", department);
+    //    });
+    //});
     #endregion
 
     return Results.Created($"Order {order.OrderId} placed", orderPlacedMessage);

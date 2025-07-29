@@ -1,3 +1,4 @@
+// ShippingService
 using MassTransit;
 using ShippingService.Consumers;
 
@@ -46,6 +47,22 @@ builder.Services.AddMassTransit(x =>
                 x.SetBindingArgument("x-match", "all");
                 x.ExchangeType = "headers";
             });
+            #endregion
+
+            #region interval
+            //e.UseMessageRetry(r=> r.Interval(3, TimeSpan.FromSeconds(5)));
+            #endregion
+
+            #region exponential
+            e.UseMessageRetry(r => r.Exponential(3, TimeSpan.FromSeconds(1),
+                TimeSpan.FromSeconds(30), TimeSpan.FromSeconds(5)));
+            #endregion
+
+            #region Circuit Breaker
+            e.UseKillSwitch(options => options
+                .SetActivationThreshold(2)
+                .SetTripThreshold(0.15)
+                .SetRestartTimeout(m: 1));
             #endregion
         });
     });
