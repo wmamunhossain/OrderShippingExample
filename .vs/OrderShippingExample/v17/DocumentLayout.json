@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE17131-2494-48CA-A70D-3BE171C353A6}|PaymentService\\PaymentService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE17131-2494-48CA-A70D-3BE171C353A6}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2616BB-A1A0-4679-B7BC-DD2774A5634B}|SagaOrchestration\\SagaOrchestration.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\sagaorchestration\\orderstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2616BB-A1A0-4679-B7BC-DD2774A5634B}|SagaOrchestration\\SagaOrchestration.csproj|solutionrelative:sagaorchestration\\orderstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5C68624-D59C-443C-B80E-115368FFBD65}|InventoryService\\InventoryService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\inventoryservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5C68624-D59C-443C-B80E-115368FFBD65}|InventoryService\\InventoryService.csproj|solutionrelative:inventoryservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE17131-2494-48CA-A70D-3BE171C353A6}|PaymentService\\PaymentService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\paymentservice\\paymentservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FAE17131-2494-48CA-A70D-3BE171C353A6}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\paymentservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4E02BE0-748C-4D0B-B114-34CB198DE8F5}|OrderService\\OrderService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4E02BE0-748C-4D0B-B114-34CB198DE8F5}|OrderService\\OrderService.csproj|solutionrelative:orderservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\shippingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|solutionrelative:shippingservice\\consumers\\orderplacedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\shippingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE27D1E-997A-4265-A3A5-980EB4C59BEA}|ShippingService\\ShippingService.csproj|solutionrelative:shippingservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2616BB-A1A0-4679-B7BC-DD2774A5634B}|SagaOrchestration\\SagaOrchestration.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\sagaorchestration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2616BB-A1A0-4679-B7BC-DD2774A5634B}|SagaOrchestration\\SagaOrchestration.csproj|solutionrelative:sagaorchestration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72F9FA4B-E321-49E2-A881-48C996992445}|SharedMessages\\SharedMessages.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\sharedmessages\\messages\\inventoryreserved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72F9FA4B-E321-49E2-A881-48C996992445}|SharedMessages\\SharedMessages.csproj|solutionrelative:sharedmessages\\messages\\inventoryreserved.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2616BB-A1A0-4679-B7BC-DD2774A5634B}|SagaOrchestration\\SagaOrchestration.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\sagaorchestration\\orderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2616BB-A1A0-4679-B7BC-DD2774A5634B}|SagaOrchestration\\SagaOrchestration.csproj|solutionrelative:sagaorchestration\\orderstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72F9FA4B-E321-49E2-A881-48C996992445}|SharedMessages\\SharedMessages.csproj|c:\\users\\wmamu\\riderprojects\\ordershippingexample\\sharedmessages\\messages\\orderplaced.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72F9FA4B-E321-49E2-A881-48C996992445}|SharedMessages\\SharedMessages.csproj|solutionrelative:sharedmessages\\messages\\orderplaced.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 154,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\OrderService\\Program.cs",
+              "RelativeDocumentMoniker": "OrderService\\Program.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\OrderService\\Program.cs",
+              "RelativeToolTip": "OrderService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T19:20:35.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Program.cs",
+              "RelativeDocumentMoniker": "ShippingService\\Program.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Program.cs",
+              "RelativeToolTip": "ShippingService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T19:21:29.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\PaymentService\\Program.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Program.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\PaymentService\\Program.cs",
+              "RelativeToolTip": "PaymentService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T19:15:25.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderPlacedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Consumers\\OrderPlacedConsumer.cs",
+              "RelativeDocumentMoniker": "ShippingService\\Consumers\\OrderPlacedConsumer.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\ShippingService\\Consumers\\OrderPlacedConsumer.cs",
+              "RelativeToolTip": "ShippingService\\Consumers\\OrderPlacedConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T19:13:45.776Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 161,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentService",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\PaymentService\\PaymentService.csproj",
+              "RelativeDocumentMoniker": "PaymentService\\PaymentService.csproj",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\PaymentService\\PaymentService.csproj",
+              "RelativeToolTip": "PaymentService\\PaymentService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-29T19:32:55.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SagaOrchestration\\OrderStateMachine.cs",
+              "RelativeDocumentMoniker": "SagaOrchestration\\OrderStateMachine.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SagaOrchestration\\OrderStateMachine.cs",
+              "RelativeToolTip": "SagaOrchestration\\OrderStateMachine.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwB8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T18:25:57.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderState.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SagaOrchestration\\OrderState.cs",
+              "RelativeDocumentMoniker": "SagaOrchestration\\OrderState.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SagaOrchestration\\OrderState.cs",
+              "RelativeToolTip": "SagaOrchestration\\OrderState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T18:14:11.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SagaOrchestration\\Program.cs",
+              "RelativeDocumentMoniker": "SagaOrchestration\\Program.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SagaOrchestration\\Program.cs",
+              "RelativeToolTip": "SagaOrchestration\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T18:10:43.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderPlaced.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SharedMessages\\Messages\\OrderPlaced.cs",
+              "RelativeDocumentMoniker": "SharedMessages\\Messages\\OrderPlaced.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SharedMessages\\Messages\\OrderPlaced.cs",
+              "RelativeToolTip": "SharedMessages\\Messages\\OrderPlaced.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T17:54:52.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InventoryReserved.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SharedMessages\\Messages\\InventoryReserved.cs",
+              "RelativeDocumentMoniker": "SharedMessages\\Messages\\InventoryReserved.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\SharedMessages\\Messages\\InventoryReserved.cs",
+              "RelativeToolTip": "SharedMessages\\Messages\\InventoryReserved.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T17:54:50.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\InventoryService\\Program.cs",
+              "RelativeDocumentMoniker": "InventoryService\\Program.cs",
+              "ToolTip": "C:\\Users\\wmamu\\RiderProjects\\OrderShippingExample\\InventoryService\\Program.cs",
+              "RelativeToolTip": "InventoryService\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T17:36:43.815Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
