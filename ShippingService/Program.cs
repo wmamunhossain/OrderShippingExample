@@ -9,13 +9,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddMassTransit(x =>
 {
-    x.AddConsumer<OrderPlacedConsumer>();
+    //x.AddConsumer<OrderPlacedConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host("rabbitmq://localhost");
         cfg.ReceiveEndpoint("order-shipping-queue", e =>
         {
-            e.ConfigureConsumer<OrderPlacedConsumer>(context);
+            //e.ConfigureConsumer<OrderPlacedConsumer>(context);
             #region direct-exchange
             e.Bind("order-placed-direct-exchange", x =>
             {

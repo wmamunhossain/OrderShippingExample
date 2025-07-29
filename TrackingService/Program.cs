@@ -1,21 +1,54 @@
-// InventoryService
+// tracking service
 using MassTransit;
-using SharedMessages.Messages;
+using TrackingService.Consumers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 builder.Services.AddMassTransit(x =>
 {
-    x.AddConsumer<InventoryReservedConsumer>();
+    //x.AddConsumer<OrderPlacedConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host("rabbitmq://localhost");
-        cfg.ReceiveEndpoint("inventory-reserved", e =>
+        cfg.ReceiveEndpoint("order-tracking-queue", e =>
         {
-            e.ConfigureConsumer<InventoryReservedConsumer>(context);
+            //e.ConfigureConsumer<OrderPlacedConsumer>(context);
+            #region direct-exchange
+            e.Bind("order-placed-direct-exchange", x =>
+            {
+                x.RoutingKey = "order.tracking";
+                x.ExchangeType = "direct";
+            });
+            #endregion
+
+            #region fanout-exchange
+            e.Bind("order-placed-fanout-exchange", x =>
+            {
+                x.ExchangeType = "fanout";
+            });
+            #endregion
+
+            #region topic-exchange
+            e.Bind("order-placed-topic-exchange", x =>
+            {
+                x.RoutingKey = "order.*";
+                x.ExchangeType = "topic";
+            });
+            #endregion
+
+            #region topic-exchange
+            e.Bind("order-placed-headers-exchange", x =>
+            {
+                x.SetBindingArgument("department", "tracking");
+                x.SetBindingArgument("priority", "low");
+                x.SetBindingArgument("x-match", "all");
+                x.ExchangeType = "headers";
+            });
+            #endregion
         });
     });
 });
@@ -32,13 +65,3 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.Run();
-
-
-public class InventoryReservedConsumer : IConsumer<OrderPlaced>
-{
-    async Task IConsumer<OrderPlaced>.Consume(ConsumeContext<OrderPlaced> context)
-    {
-        Console.WriteLine($"Payment processed for Order {context.Message.OrderId}");
-        await context.Publish(new PaymentCompleted(context.Message.OrderId));
-    }
-}
