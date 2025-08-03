@@ -12,7 +12,7 @@ builder.Services.AddMassTransit(x =>
     x.AddConsumer<InventoryReservedConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("rabbitmq://localhost");
+        cfg.Host("localhost", "learn");
         cfg.ReceiveEndpoint("inventory-reserved", e =>
         {
             e.ConfigureConsumer<InventoryReservedConsumer>(context);

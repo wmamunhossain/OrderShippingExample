@@ -11,7 +11,7 @@ builder.Services.AddMassTransit((x) =>
 {
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("rabbitmq://localhost");
+        cfg.Host("localhost", "learn");
 
         #region default
 

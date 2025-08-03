@@ -12,7 +12,7 @@ builder.Services.AddMassTransit(x =>
     x.AddConsumer<OrderPlacedConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("rabbitmq://localhost");
+        cfg.Host("localhost", "learn");
         cfg.ReceiveEndpoint("order-placed", e =>
         {
             e.ConfigureConsumer<OrderPlacedConsumer>(context);

@@ -10,7 +10,7 @@ builder.Services.AddMassTransit(x =>
         .InMemoryRepository();
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("rabbitmq://localhost");
+        cfg.Host("localhost", "learn");
         cfg.ReceiveEndpoint("saga-service", e =>
         {
             e.StateMachineSaga<OrderState>(context);
